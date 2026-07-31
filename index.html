@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Andries Napo Leemisa - Executive Curriculum Vitae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Action Toolbar (Hidden during print) -->
+    <div class="no-print floating-toolbar" id="floatingToolbar">
+        <div class="toolbar-brand">
+            <span class="badge-dot"></span> Dr. Leemisa CV Viewer
+        </div>
+        <div class="toolbar-actions">
+            <a href="Dr_Andries_Napo_Leemisa_CV.pdf" download class="btn btn-primary" id="btnDownloadPdf">
+                <i class="fa-solid fa-file-pdf"></i> Download PDF
+            </a>
+            <button class="btn btn-secondary" onclick="window.print()" id="btnPrintCv">
+                <i class="fa-solid fa-print"></i> Print CV
+            </button>
+            <button class="btn btn-outline" onclick="toggleLatexModal()" id="btnViewLatex">
+                <i class="fa-solid fa-code"></i> Overleaf LaTeX Source
+            </button>
+        </div>
+    </div>
+
+    <!-- Main CV Paper Container -->
+    <main class="cv-paper-container" id="cvContent">
+        <!-- Header Section -->
+        <header class="cv-header">
+            <div class="header-main">
+                <h1 class="candidate-name" id="candidateName">Dr. Andries Napo Leemisa</h1>
+                <h2 class="candidate-title" id="candidateTitle">Biologist (PhD) &amp; AI Automation Entrepreneur</h2>
+                <p class="profile-summary">
+                    Talented <strong>Biologist (PhD)</strong> and <strong>AI Automation Entrepreneur</strong> with over 5 years of international research, analytical, and technological leadership experience in South Africa, Hungary, and Germany. Specialized in cardiac optogenetics, single-cell electrophysiology, quantitative modeling, and production-grade agentic AI workflows. Proven track record of publishing high-impact research (<em>Science Advances</em>, <em>Biophysical Journal</em>), leading cross-functional teams, and engineering AI-driven operating systems that optimize operational throughput by +30%.
+                </p>
+            </div>
+            <div class="header-contact">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:andriesnapo@gmail.com">andriesnapo@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+27 601896817</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Johannesburg, South Africa</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/andries-napo-leemisa-a97097332" target="_blank">linkedin.com/in/andries-napo-leemisa</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Executive Experience -->
+        <section class="cv-section" id="sectionExperience">
+            <h3 class="section-title"><i class="fa-solid fa-briefcase"></i> Professional &amp; Research Experience</h3>
+
+            <!-- Role 1 -->
+            <article class="experience-card">
+                <div class="card-header">
+                    <div>
+                        <h4 class="job-title">Founder &amp; Lead AI Solutions Architect</h4>
+                        <h5 class="company-name">Scinovalities AI Automation Agency</h5>
+                    </div>
+                    <div class="job-meta">
+                        <span class="job-dates">Jan 2025 — Present</span>
+                        <span class="job-location">Johannesburg, South Africa</span>
+                    </div>
+                </div>
+                <ul class="bullet-list">
+                    <li>Architected enterprise-grade autonomous voice agents and agentic AI workflows, reducing candidate screening processing times by 60% and accelerating talent acquisition pipelines.</li>
+                    <li>Engineered a scalable Hospitality Operating System, automating 40% of manual administrative tasks via modern technology orchestration.</li>
+                    <li>Developed <strong>Autoflow AI</strong> (Real Estate &amp; Lodging Management System) to eliminate repetitive administrative workflows, elevating team productivity by 25%.</li>
+                    <li>Created <strong>Lead Genius SA</strong>, an automated B2B lead generation platform integrated with CRM, multi-channel outreach, bulk email automation, and marketing analytics.</li>
+                    <li>Designed and optimized digital presence and brand assets for corporate clients, yielding a +28% increase in operational throughput.</li>
+                </ul>
+                <div class="skill-tags">
+                    <span class="tag">LLM Orchestration</span>
+                    <span class="tag">Agentic AI</span>
+                    <span class="tag">Voice Agent Deployment</span>
+                    <span class="tag">Modern Technology</span>
+                    <span class="tag">Scalable API Design</span>
+                </div>
+            </article>
+
+            <!-- Role 2 -->
+            <article class="experience-card">
+                <div class="card-header">
+                    <div>
+                        <h4 class="job-title">Doctoral Research Scientist</h4>
+                        <h5 class="company-name">Institute for Experimental Cardiovascular Medicine (IEKM), University of Freiburg</h5>
+                    </div>
+                    <div class="job-meta">
+                        <span class="job-dates">Nov 2021 — Mar 2026</span>
+                        <span class="job-location">Freiburg, Germany</span>
+                    </div>
+                </div>
+                <ul class="bullet-list">
+                    <li>Investigated novel light-gated potassium channels for optical modulation and inhibition of cardiomyocyte action potentials and tissue excitability to advance anti-arrhythmic research.</li>
+                    <li>Orchestrated and executed high-throughput single-cell patch-clamp electrophysiology experiments using Axopatch 200B amplifiers and Digidata 1550A digitizers.</li>
+                    <li>Engineered adenoviral expression vectors and performed primary mammalian cardiomyocyte isolations under strict S2 Good Laboratory Practice (GLP) biosafety standards.</li>
+                    <li>Co-developed quantitative photocycle models for novel optogenetic channels, directly contributing to landmark publications in <em>Science Advances</em> (2025) and <em>Biophysical Journal</em> (2026).</li>
+                    <li>Presented peer-reviewed scientific findings at premier international conferences across Europe, including NoTiCE (Glasgow), SPP1926 (Uslar), and DGK (Mannheim).</li>
+                    <li>Organized and led weekly IEKM PhD Journal Clubs (2022–2023), driving critical scientific critique and knowledge transfer among doctoral candidates.</li>
+                </ul>
+                <div class="skill-tags">
+                    <span class="tag">Quantitative Modeling</span>
+                    <span class="tag">Signal Processing</span>
+                    <span class="tag">Patch-Clamp Electrophysiology</span>
+                    <span class="tag">Data Mining</span>
+                    <span class="tag">S2 GLP Standards</span>
+                </div>
+            </article>
+
+            <!-- Role 3 -->
+            <article class="experience-card">
+                <div class="card-header">
+                    <div>
+                        <h4 class="job-title">Master's Research Fellow</h4>
+                        <h5 class="company-name">Department of Biochemistry, Eötvös Loránd University (ELTE)</h5>
+                    </div>
+                    <div class="job-meta">
+                        <span class="job-dates">Sep 2017 — Jul 2019</span>
+                        <span class="job-location">Budapest, Hungary</span>
+                    </div>
+                </div>
+                <ul class="bullet-list">
+                    <li>Elucidated the biochemical mechanics of RecQ helicases in homologous recombination pathway selection to decipher fundamental genome stability mechanisms.</li>
+                    <li>Purified high-yield recombinant proteins and plasmid DNA, optimizing MaxPrep protocols and expression vector constructs.</li>
+                    <li>Quantified protein-DNA binding dynamics using advanced biophysical assays, including Fluorescence Anisotropy and Electrophoretic Mobility Shift Assays (EMSA).</li>
+                    <li>Evaluated molecular recombination pathways to characterize helicase-protein interactions within cell-free expression systems.</li>
+                </ul>
+                <div class="skill-tags">
+                    <span class="tag">Biophysical Modeling</span>
+                    <span class="tag">Statistical Analysis</span>
+                    <span class="tag">Protein Purification</span>
+                    <span class="tag">Fluorescence Anisotropy</span>
+                </div>
+            </article>
+
+            <!-- Role 4 -->
+            <article class="experience-card">
+                <div class="card-header">
+                    <div>
+                        <h4 class="job-title">Graduate Research Assistant</h4>
+                        <h5 class="company-name">Johannesburg Forensic Pathology Services / Wits University</h5>
+                    </div>
+                    <div class="job-meta">
+                        <span class="job-dates">Feb 2015 — Nov 2016</span>
+                        <span class="job-location">Johannesburg, South Africa</span>
+                    </div>
+                </div>
+                <ul class="bullet-list">
+                    <li>Evaluated toxicological medico-legal autopsy records (2013–2015) to identify mortality patterns and toxicological trends across Greater Johannesburg.</li>
+                    <li>Analyzed and categorized laboratory case records, extracting critical toxicological case data for statistical synthesis.</li>
+                    <li>Synthesized a comprehensive forensic thesis connecting toxic substance prevalence to medico-legal cause-of-death findings.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Education -->
+        <section class="cv-section" id="sectionEducation">
+            <h3 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Academic Qualifications</h3>
+            
+            <div class="grid-2col">
+                <div class="edu-card">
+                    <span class="edu-year">2021 — 2026</span>
+                    <h4 class="edu-degree">PhD in Biology (Cardiac Optogenetics)</h4>
+                    <h5 class="edu-institution">University of Freiburg (IEKM) — Germany</h5>
+                    <p class="edu-desc">Research Focus: Light-gated potassium channels &amp; optical modulation of cardiac rhythm.</p>
+                </div>
+                <div class="edu-card">
+                    <span class="edu-year">2017 — 2019</span>
+                    <h4 class="edu-degree">MSc in Biology (Molecular &amp; Cell Biology)</h4>
+                    <h5 class="edu-institution">Eötvös Loránd University (ELTE) — Hungary</h5>
+                    <p class="edu-desc">Specialization: RecQ Helicases &amp; homologous recombination pathway selection.</p>
+                </div>
+                <div class="edu-card">
+                    <span class="edu-year">2015</span>
+                    <h4 class="edu-degree">BHSc (Honours) in Forensic Sciences</h4>
+                    <h5 class="edu-institution">University of the Witwatersrand (Wits) — South Africa</h5>
+                    <p class="edu-desc">Forensic toxicology, medico-legal pathology &amp; molecular diagnostics.</p>
+                </div>
+                <div class="edu-card">
+                    <span class="edu-year">2013 — 2014</span>
+                    <h4 class="edu-degree">BSc in Biological Sciences</h4>
+                    <h5 class="edu-institution">University of the Witwatersrand (Wits) — South Africa</h5>
+                    <p class="edu-desc">Double major in Biochemistry &amp; Cell Biology, and Genetics &amp; Developmental Biology.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Grid -->
+        <section class="cv-section" id="sectionSkills">
+            <h3 class="section-title"><i class="fa-solid fa-gears"></i> Technical Skills &amp; Core Competencies</h3>
+            
+            <div class="skills-box-grid">
+                <div class="skill-category">
+                    <h5><i class="fa-solid fa-robot"></i> AI &amp; Software Engineering</h5>
+                    <p>LLM Orchestration, Agentic AI Workflows, Autonomous Voice Agents, Scalable API Design, Modern Tech Stack, Linux Administration.</p>
+                </div>
+                <div class="skill-category">
+                    <h5><i class="fa-solid fa-heart-pulse"></i> Electrophysiology &amp; Optics</h5>
+                    <p>Single-Cell Patch-Clamp (Axopatch 200B, Digidata 1550A), Langendorff Heart Perfusion, Cardiomyocyte Isolation, Cardiac Optogenetics.</p>
+                </div>
+                <div class="skill-category">
+                    <h5><i class="fa-solid fa-chart-line"></i> Data Science &amp; Analytics</h5>
+                    <p>Signal Processing, Data Mining, Quantitative Modeling, OriginPro 2024b, Clampfit, pClamp, IonOptix Suites, Statistical Analysis.</p>
+                </div>
+                <div class="skill-category">
+                    <h5><i class="fa-solid fa-flask"></i> Molecular &amp; Cell Biology</h5>
+                    <p>Adenoviral Expression Vectors, DNA/Protein Purification (MaxPrep), Cell Culture, EMSA Assays, Fluorescence Anisotropy, Protein Dynamics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications & Conferences -->
+        <section class="cv-section" id="sectionPublications">
+            <h3 class="section-title"><i class="fa-solid fa-book-bookmark"></i> Publications &amp; Conferences</h3>
+            <ul class="pub-list">
+                <li>
+                    <strong>Spreen et al. (2025).</strong> "Optogenetic silencing by combining a rhodopsin cyclase with an engineered cGMP-gated potassium channel." <em>Science Advances</em>, 11(48).
+                </li>
+                <li>
+                    <strong>Ohnemus, Tillert, Leemisa et al. (2026).</strong> "Experimentally informed photocycle model of light-gated channel WiChR." <em>Biophysical Journal</em>, 1(17).
+                </li>
+                <li>
+                    <strong>NoTiCE International Symposium (2023):</strong> Poster Presenter &amp; Researcher — Glasgow, Scotland, UK.
+                </li>
+                <li>
+                    <strong>SPP1926 Next Generation Optogenetics Conference (2023):</strong> Co-Author &amp; Presenter — Uslar, Germany.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Certifications & Awards -->
+        <section class="cv-section" id="sectionCertifications">
+            <h3 class="section-title"><i class="fa-solid fa-award"></i> Certifications, Fellowships &amp; Awards</h3>
+            <div class="grid-2col">
+                <div class="cert-item">
+                    <h5>FELASA Category B &amp; S2 GLP Biosafety</h5>
+                    <span>University of Cologne, Germany (2021/2022)</span>
+                </div>
+                <div class="cert-item">
+                    <h5>IEKM Doctoral Research Fellowship</h5>
+                    <span>University of Freiburg / IEKM (2021)</span>
+                </div>
+                <div class="cert-item">
+                    <h5>Good Scientific Practice &amp; Advanced Biostatistics</h5>
+                    <span>Spemann Graduate School of Biology &amp; Medicine (2022)</span>
+                </div>
+                <div class="cert-item">
+                    <h5>Stipendium Hungaricum Master's Scholarship</h5>
+                    <span>Hungarian Government &amp; ELTE (2017)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- References -->
+        <section class="cv-section" id="sectionReferences">
+            <h3 class="section-title"><i class="fa-solid fa-user-check"></i> Professional References</h3>
+            <div class="grid-2col">
+                <div class="ref-card">
+                    <h4>Dr. Franziska Schneider-Warme</h4>
+                    <p class="ref-role">Optogenetics Group Leader / PhD Supervisor</p>
+                    <p class="ref-org">IEKM, University of Freiburg, Germany</p>
+                    <a href="mailto:franziska.schneider.uhz@uniklinik-freiburg.de" class="ref-email">franziska.schneider.uhz@uniklinik-freiburg.de</a>
+                </div>
+                <div class="ref-card">
+                    <h4>Prof. Dr. Med. Peter Kohl</h4>
+                    <p class="ref-role">Director &amp; PhD Co-Supervisor</p>
+                    <p class="ref-org">IEKM, University Heart Center Freiburg, Germany</p>
+                    <a href="mailto:peter.kohl@uniklinik-freiburg.de" class="ref-email">peter.kohl@uniklinik-freiburg.de</a>
+                </div>
+                <div class="ref-card">
+                    <h4>Dr. Gábor Harami</h4>
+                    <p class="ref-role">MSc Thesis Supervisor</p>
+                    <p class="ref-org">Eötvös Loránd University (ELTE), Hungary</p>
+                    <a href="mailto:gabor.harami@gmail.com" class="ref-email">gabor.harami@gmail.com</a>
+                </div>
+                <div class="ref-card">
+                    <h4>Mrs. Ildi Wainer</h4>
+                    <p class="ref-role">BHSc Honours Supervisor</p>
+                    <p class="ref-org">University of the Witwatersrand, South Africa</p>
+                    <a href="mailto:ildi.wainer@wits.ac.za" class="ref-email">ildi.wainer@wits.ac.za</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Overleaf LaTeX Source Modal -->
+    <div class="modal-overlay" id="latexModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-code"></i> Overleaf LaTeX Source Code</h3>
+                <button class="modal-close" onclick="toggleLatexModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Copy this LaTeX code and paste it directly into an empty project on <a href="https://www.overleaf.com" target="_blank">Overleaf.com</a> to compile an exact LaTeX PDF.</p>
+                <textarea id="latexCodeText" readonly></textarea>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="copyLatexCode()">
+                    <i class="fa-solid fa-copy"></i> Copy LaTeX Code
+                </button>
+                <button class="btn btn-secondary" onclick="toggleLatexModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleLatexModal() {
+            const modal = document.getElementById('latexModal');
+            modal.classList.toggle('active');
+            if (modal.classList.contains('active')) {
+                fetch('cv_dr_andries_leemisa.tex')
+                    .then(res => res.text())
+                    .then(text => {
+                        document.getElementById('latexCodeText').value = text;
+                    });
+            }
+        }
+
+        function copyLatexCode() {
+            const copyText = document.getElementById("latexCodeText");
+            copyText.select();
+            document.execCommand("copy");
+            alert("Overleaf LaTeX code copied to clipboard!");
+        }
+    </script>
+</body>
+</html>
