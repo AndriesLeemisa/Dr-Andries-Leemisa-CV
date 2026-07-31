@@ -1,0 +1,208 @@
+\documentclass[10pt,a4paper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{utf8}
+\usepackage[margin=0.55in]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+
+% --- COLOR DEFINITIONS ---
+\definecolor{primary}{HTML}{0F172A}    % Slate Dark / Midnight
+\definecolor{secondary}{HTML}{2563EB}  % Royal Sapphire Blue
+\definecolor{textdark}{HTML}{1E293B}   % Deep Charcoal
+\definecolor{textgray}{HTML}{64748B}   % Cool Gray
+\definecolor{bglight}{HTML}{F8FAFC}    % Light Gray Box Background
+\definecolor{bordergray}{HTML}{CBD5E1} % Subtle Border
+
+% --- SETUP HYPERREF ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=secondary,
+    urlcolor=secondary,
+    pdfauthor={Dr. Andries Napo Leemisa},
+    pdftitle={Curriculum Vitae - Dr. Andries Napo Leemisa}
+}
+
+% --- GLOBAL STYLE ADJUSTMENTS ---
+\pagestyle{empty}
+\color{textdark}
+\setlist[itemize]{leftmargin=1.2em, itemsep=2pt, topsep=2pt, parsep=0pt}
+
+% --- SECTION HEADING STYLING ---
+\titleformat{\section}
+  {\color{primary}\large\bfseries\uppercase}
+  {}{0em}{}
+  [\color{secondary}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% --- CUSTOM COMMANDS ---
+\newcommand{\jobtitle}[4]{
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{\large #1} & \textbf{\color{textgray} #3} \\
+    \textit{\color{secondary} #2} & \textit{\color{textgray} #4} \\
+  \end{tabularx}
+  \vspace{-2pt}
+}
+
+\newcommand{\skilltag}[1]{%
+  \tcbox[on line, arc=2pt, colback=bglight, colframe=bordergray, 
+         boxsep=1.5pt, left=4pt, right=4pt, top=2pt, bottom=2pt, 
+         boxrule=0.5pt]{\small\bfseries\color{primary}#1}%
+}
+
+\begin{document}
+
+% ==================== HEADER ====================
+\begin{center}
+    {\Huge \textbf{\color{primary} Dr. Andries Napo Leemisa}} \\[4pt]
+    {\large \textbf{\color{secondary} Biologist (PhD) \& AI Automation Entrepreneur}} \\[6pt]
+    \small
+    \faEnvelope~ \href{mailto:andriesnapo@gmail.com}{andriesnapo@gmail.com} \quad|\quad
+    \faPhone~ +27 601896817 \quad|\quad
+    \faMapMarkerAlt~ Johannesburg, Gauteng, South Africa \\[3pt]
+    \faLinkedin~ \href{https://linkedin.com/in/andries-napo-leemisa-a97097332}{linkedin.com/in/andries-napo-leemisa-a97097332}
+\end{center}
+\vspace{-8pt}
+\hrule height 1pt \color{primary}
+\vspace{6pt}
+
+% ==================== EXECUTIVE PROFILE ====================
+\section{Executive Profile}
+Talented \textbf{Biologist (PhD)} and \textbf{AI Automation Entrepreneur} with over 5 years of international research, analytical, and technological leadership experience in South Africa, Hungary, and Germany. Specialized in cardiac optogenetics, single-cell patch-clamp electrophysiology, quantitative photocycle modeling, and production-grade agentic AI automation workflows. Proven track record of high-impact scientific publications (\textit{Science Advances}, \textit{Biophysical Journal}), leading cross-functional teams, and engineering AI-driven operating systems that optimize operational throughput (+30\%). Seeking to leverage interdisciplinary scientific rigor and tech innovation in senior/executive roles across Biotechnology, Pharmaceuticals, R\&D, HealthTech, and Enterprise Solutions.
+
+% ==================== WORK EXPERIENCE ====================
+\section{Professional \& Research Experience}
+
+\jobtitle{Founder \& Lead AI Solutions Architect}{Scinovalities AI Automation Agency}{Jan 2025 -- Present}{Johannesburg, South Africa}
+\begin{itemize}
+    \item Architected enterprise-grade autonomous voice agents and agentic AI workflows, reducing candidate screening processing times by 60\% and significantly accelerating talent acquisition pipelines.
+    \item Engineered a scalable Hospitality Operating System, automating 40\% of manual administrative tasks via modern technology orchestration.
+    \item Developed \textbf{Autoflow AI} (Real Estate \& Lodging Management Operating System) to automate repetitive administrative workflows, boosting team productivity and delivery speed by 25\%.
+    \item Engineered \textbf{Lead Genius SA}, an automated B2B lead generation platform integrated with CRM, multi-channel outreach, bulk email automation, and marketing analytics to drive enterprise client acquisition.
+    \item Designed and optimized digital presence and brand assets for real estate and corporate clients, yielding a +28\% increase in operational throughput.
+\end{itemize}
+\vspace{2pt}
+\skilltag{LLM Orchestration} \skilltag{Agentic AI} \skilltag{Voice Agent Deployment} \skilltag{Modern Technology} \skilltag{Scalable API Design}
+\vspace{8pt}
+
+\jobtitle{Doctoral Research Scientist}{Institute for Experimental Cardiovascular Medicine (IEKM), Univ. of Freiburg}{Nov 2021 -- Mar 2026}{Freiburg, Germany}
+\begin{itemize}
+    \item Investigated novel light-gated potassium channels for optical modulation and inhibition of cardiomyocyte action potentials and tissue excitability to advance anti-arrhythmic research.
+    \item Orchestrated and executed high-throughput single-cell patch-clamp electrophysiology experiments utilizing Axopatch 200B amplifiers and Digidata 1550A digitizers.
+    \item Engineered adenoviral expression vectors and performed primary mammalian cardiomyocyte isolations under strict S2 Good Laboratory Practice (GLP) biosafety standards.
+    \item Co-developed quantitative photocycle models for novel optogenetic channels, directly contributing to landmark papers in \textit{Science Advances} (2025) and \textit{Biophysical Journal} (2026).
+    \item Presented peer-reviewed scientific findings at premier international conferences across Europe, including NoTiCE (Glasgow), SPP1926 (Uslar), and DGK (Mannheim).
+    \item Formulated, organized, and led weekly IEKM PhD Journal Clubs (2022--2023), fostering scientific critique and knowledge transfer among doctoral candidates.
+\end{itemize}
+\vspace{2pt}
+\skilltag{Quantitative Modeling} \skilltag{Signal Processing} \skilltag{Patch-Clamp Electrophysiology} \skilltag{Data Mining} \skilltag{S2 GLP}
+\vspace{8pt}
+
+\jobtitle{Master's Research Fellow}{Department of Biochemistry, Eötvös Loránd University (ELTE)}{Sep 2017 -- Jul 2019}{Budapest, Hungary}
+\begin{itemize}
+    \item Elucidated the biochemical mechanics of RecQ helicases in homologous recombination pathway selection to decipher fundamental genome stability mechanisms.
+    \item Purified high-yield recombinant proteins and plasmid DNA, optimizing MaxPrep protocols and expression vector constructs.
+    \item Quantified protein-DNA binding dynamics using advanced biophysical assays, including Fluorescence Anisotropy and Electrophoretic Mobility Shift Assays (EMSA).
+    \item Evaluated molecular recombination pathways to characterize helicase-protein interactions within cell-free expression systems.
+\end{itemize}
+\vspace{2pt}
+\skilltag{Biophysical Modeling} \skilltag{Statistical Analysis} \skilltag{Protein Purification} \skilltag{Fluorescence Anisotropy}
+\vspace{8pt}
+
+\jobtitle{Graduate Research Assistant}{Johannesburg Forensic Pathology Services / Wits University}{Feb 2015 -- Nov 2016}{Johannesburg, South Africa}
+\begin{itemize}
+    \item Evaluated toxicological medico-legal autopsy records (2013--2015) to identify mortality patterns and toxicological trends across Greater Johannesburg.
+    \item Analyzed, sanitized, and categorized extensive laboratory case records, extracting critical toxicological case data for statistical synthesis.
+    \item Synthesized a comprehensive forensic medicine thesis connecting toxic substance prevalence to medico-legal cause-of-death findings.
+\end{itemize}
+\vspace{2pt}
+\skilltag{Data Analytics} \skilltag{Forensic Toxicology} \skilltag{Statistical Synthesis} \skilltag{Case Database Review}
+\vspace{8pt}
+
+\jobtitle{Teaching Assistant \& Experiments Demonstrator}{Targeting Talent Program, University of the Witwatersrand}{Jun 2015 -- Jul 2015}{Johannesburg, South Africa}
+\begin{itemize}
+    \item Delivered rigorous laboratory training and academic mentorship to top-performing Grade 12 learners entering tertiary STEM disciplines.
+    \item Demonstrated core chemistry experiments and molecular biology techniques to over 30 high-achieving scholars.
+\end{itemize}
+
+% ==================== EDUCATION ====================
+\section{Education \& Qualifications}
+
+\noindent
+\textbf{PhD in Biology (Cardiac Optogenetics)} \hfill \textbf{Nov 2021 -- Mar 2026} \\
+\textit{University of Freiburg (IEKM) -- Freiburg, Germany} \\
+\small{\textbf{Research Focus:} Light-gated potassium channels and optical modulation of cardiac rhythm.} \vspace{4pt}
+
+\noindent
+\textbf{MSc in Biology (Molecular, Cellular \& Developmental Biology)} \hfill \textbf{Sep 2017 -- Jul 2019} \\
+\textit{Eötvös Loránd University (ELTE) -- Budapest, Hungary} \\
+\small{\textbf{Specialization:} RecQ helicases and homologous recombination selection pathways.} \vspace{4pt}
+
+\noindent
+\textbf{BHSc (Honours) in Forensic Sciences} \hfill \textbf{Feb 2015 -- Nov 2015} \\
+\textit{University of the Witwatersrand (Wits) -- Johannesburg, South Africa} \\
+\small{\textbf{Curriculum:} Forensic toxicology, medico-legal autopsy analysis, and molecular pathology.} \vspace{4pt}
+
+\noindent
+\textbf{BSc in Biological Sciences (Biochemistry, Cell Biology \& Genetics)} \hfill \textbf{Feb 2013 -- Nov 2014} \\
+\textit{University of the Witwatersrand (Wits) -- Johannesburg, South Africa} \\
+\small{\textbf{Double Major:} Biochemistry \& Cell Biology, and Genetics \& Developmental Biology.}
+
+% ==================== TECHNICAL SKILLS ====================
+\section{Technical Skills \& Core Competencies}
+\begin{tcolorbox}[colback=bglight, colframe=bordergray, arc=3pt, boxrule=0.5pt, top=4pt, bottom=4pt, left=6pt, right=6pt]
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+\textbf{\color{primary} AI \& Software Engineering:} & \textbf{\color{primary} Electrophysiology \& Optics:} \\
+LLM Orchestration, Agentic AI, Autonomous Voice Agents, API Design, Modern Tech Stack, Linux. & Single-Cell Patch-Clamp (Axopatch 200B, Digidata 1550A), Langendorff Perfusion, Optogenetics. \\[4pt]
+\textbf{\color{primary} Data Science \& Analytics:} & \textbf{\color{primary} Molecular \& Cell Biology:} \\
+Signal Processing, OriginPro 2024b, Clampfit, pClamp, IonOptix, Data Mining, Quantitative Modeling. & Adenoviral Vectors, DNA/Protein Purification (MaxPrep), Cell Culture, EMSA, Fluorescence Anisotropy. \\[4pt]
+\textbf{\color{primary} Forensic Pathology \& Science:} & \textbf{\color{primary} Leadership \& Governance:} \\
+Forensic Toxicology, Medico-Legal Database Review, Forensic Genetics, Investigative Analysis. & Research Group Mentorship, PhD Journal Club Lead, Student Council Secretary, FELASA Cat B, S2 GLP.
+\end{tabularx}
+\end{tcolorbox}
+
+% ==================== PUBLICATIONS & CONFERENCES ====================
+\section{Publications \& Academic Conferences}
+\begin{itemize}
+    \item \textbf{Spreen et al. (2025).} Optogenetic silencing by combining a rhodopsin cyclase with an engineered cGMP-gated potassium channel. \textit{Science Advances}, 11(48).
+    \item \textbf{Ohnemus, Tillert, Leemisa et al. (2026).} Experimentally informed photocycle model of light-gated channel WiChR. \textit{Biophysical Journal}, 1(17).
+    \item \textbf{NoTiCE International Symposium (2023):} Researcher \& Poster Presenter -- Glasgow, Scotland, UK.
+    \item \textbf{SPP1926 Next Generation Optogenetics Conference (2023):} Co-Author \& Presenter -- Uslar, Germany.
+\end{itemize}
+
+% ==================== CERTIFICATIONS & HONORS ====================
+\section{Certifications, Fellowships \& Executive Awards}
+\begin{tcolorbox}[colback=bglight, colframe=bordergray, arc=3pt, boxrule=0.5pt, top=4pt, bottom=4pt, left=6pt, right=6pt]
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+\textbf{FELASA Category B \& S2 GLP Biosafety Certification} & \textbf{IEKM Doctoral Research Fellowship} \\
+\small\color{textgray} University of Cologne, Germany (2021/2022) & \small\color{textgray} University of Freiburg / IEKM (2021) \\[3pt]
+\textbf{Good Scientific Practice \& Advanced Biostatistics} & \textbf{Stipendium Hungaricum Master's Scholarship} \\
+\small\color{textgray} Spemann Graduate School of Biology \& Medicine (2022) & \small\color{textgray} Hungarian Government \& ELTE (2017) \\[3pt]
+\textbf{Mental Health in Academia Credential} & \textbf{NRF Honours Funding \& Wits Entrance Scholarship} \\
+\small\color{textgray} Spemann Graduate School of Biology \& Medicine (2023) & \small\color{textgray} National Research Foundation \& Wits Univ. (2013/2015)
+\end{tabularx}
+\end{tcolorbox}
+
+% ==================== REFERENCES ====================
+\section{Professional References}
+\begin{tcolorbox}[colback=bglight, colframe=bordergray, arc=3pt, boxrule=0.5pt, top=4pt, bottom=4pt, left=6pt, right=6pt]
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+\textbf{Dr. Franziska Schneider-Warme} & \textbf{Prof. Dr. Med. Peter Kohl} \\
+\small Optogenetics Group Leader / PhD Supervisor & \small Director \& PhD Co-Supervisor \\
+\small IEKM, University of Freiburg, Germany & \small IEKM, University Heart Center Freiburg, Germany \\
+\small \href{mailto:franziska.schneider.uhz@uniklinik-freiburg.de}{franziska.schneider.uhz@uniklinik-freiburg.de} & \small \href{mailto:peter.kohl@uniklinik-freiburg.de}{peter.kohl@uniklinik-freiburg.de} \\[8pt]
+\textbf{Dr. Gábor Harami} & \textbf{Mrs. Ildi Wainer} \\
+\small MSc Thesis Supervisor & \small BHSc Honours Supervisor \\
+\small Eötvös Loránd University (ELTE), Hungary & \small University of the Witwatersrand, South Africa \\
+\small \href{mailto:gabor.harami@gmail.com}{gabor.harami@gmail.com} & \small \href{mailto:ildi.wainer@wits.ac.za}{ildi.wainer@wits.ac.za}
+\end{tabularx}
+\end{tcolorbox}
+
+\end{document}
